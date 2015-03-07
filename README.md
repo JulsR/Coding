@@ -16,14 +16,4 @@ hotel_web_site
 Code : 
 
 
-class Demo {
 
- private $oti_hotel = array (
-
-“ HotelName” -> “hotel_name”,
-“HotelAddress” -> “hotel_address”,
-“HotelWebsite” -> “hotel_web_site”,
-
- );
-
- }
