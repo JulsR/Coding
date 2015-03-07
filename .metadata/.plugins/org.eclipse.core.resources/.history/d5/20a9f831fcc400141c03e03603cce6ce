@@ -1,0 +1,18 @@
+<?php
+require 'hotel.php'; //allows you to use the demo.php file.
+
+$hotelObj  = new Hotel();
+
+$hotelObj->getHotelName();
+print_r($hotelObj);
+print_r($hotelObj[0]);
+// var_dump($hotel);
+
+// $hAdd ->getHotelAddress();
+// echo $hAdd;
+
+// $hWeb ->getHotelWebsite();
+// echo $hWeb;
+
+
+?>

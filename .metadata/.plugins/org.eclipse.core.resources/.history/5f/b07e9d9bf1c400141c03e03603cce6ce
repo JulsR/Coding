@@ -1,0 +1,18 @@
+<?php
+require 'demo.php'; //allows you to use the demo.php file.
+
+
+$hName = new Demo(); //instantiates the class object
+
+
+$hName ->getHotelName();
+var_dump($hName);
+
+$hAdd ->getHotelAddress();
+// echo $hAdd;
+
+$hWeb ->getHotelWebsite();
+// echo $hWeb;
+
+
+?>

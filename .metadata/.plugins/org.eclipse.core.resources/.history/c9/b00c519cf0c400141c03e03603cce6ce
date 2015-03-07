@@ -1,0 +1,15 @@
+<?php
+require 'demo.php';
+
+
+
+$hName = new Demo();
+$hName ->getHotelName();
+
+$hName ->getHotelAddress();
+
+$hName ->getHotelWebsite();
+
+
+
+?>

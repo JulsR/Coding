@@ -1,0 +1,56 @@
+<?php
+
+/*
+ * The Assignment - create a class that, when instantiated, pulls all data from an imaginary table named oti_hotel
+ * and stores it in a private array inside the class.
+ *
+ * oti_hotels fields:
+ * hotel_name 
+ * hotel_address 
+ * hotel_web_site
+ *
+ */
+class Hotel {
+	
+	// private $oti_hotel = array ();
+	
+	// function __construct() {
+	// $oti_hotel = array (
+	// "HotelName" => "Juliessa Inn",
+	// "HotelAddress" => "9201 Juliessa Drive",
+	// "HotelWebsite" => "www.juliessaHotel.com"
+	// );
+	// }
+	
+	// This is just an array, no key/name structure. You can access it the same way, 0 is the first element.
+	private static $oti_hotel = array (
+			"HotelName" => "Juliessa Inn",
+			"HotelAddress" => "9201 Juliessa Drive",
+			"HotelWebsite" => "www.juliessaHotel.com" 
+	);
+
+		public function getHotelName(){
+			
+			return self::$oti_hotel;
+			
+		}
+		
+		getHotelName();
+// 	public  function getHotelName() {
+		
+// // 		echo "getHotelName:";
+// // 		var_dump ( $oti_hotel );
+// // 		print_r ($oti_hotel);
+// 		return $oti_hotel [0];
+// 	}
+	
+// 	public  function getHotelAddress() {
+// 		return $oti_hotel [1];
+// 	}
+	
+// 	public  function getHotelWebsite() {
+// 		return $oti_hotel [2];
+// 	}
+}
+
+?>

@@ -1,0 +1,266 @@
+!SESSION 2015-03-07 10:47:40.993 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/Erik/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/Erik/Sites/julissa_help -product org.eclipse.epp.package.jee.product -keyring /Users/Erik/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-03-07 10:47:45.608
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2015-03-07 10:47:46.059
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-03-07 10:47:46.059
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4706efb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@71862303,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@1d64d42f,,true),[Lorg.eclipse.core.commands.Parameterization;@46a668bc),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.equinox.ds 2 0 2015-03-07 10:48:00.661
+!MESSAGE Getting a lock required more than 10000 ms. There might be a synchronization problem in this callstack or just the build/dispose process of some components took too long! 
+!STACK 0
+java.lang.Exception: Debug stacktrace
+	at org.eclipse.equinox.internal.ds.InstanceProcess.getLock(InstanceProcess.java:120)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:560)
+	at org.eclipse.equinox.internal.ds.ServiceReg.getService(ServiceReg.java:53)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:496)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:619)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.addingService(ProvisioningAgent.java:159)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:66)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:146)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:129)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2015-03-07 10:50:23.876
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.php.ui 4 2 2015-03-07 13:10:46.505
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.php.ui".
+!STACK 1
+org.eclipse.dltk.core.ModelException: java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:180)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.access$0(PhpReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy$2.run(PhpReconcilingStrategy.java:221)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:219)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:195)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+Caused by: java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:166)
+	... 12 more
+!SUBENTRY 1 org.eclipse.dltk.core 4 4 2015-03-07 13:10:46.507
+!MESSAGE java.lang.IllegalArgumentException
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:166)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.access$0(PhpReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy$2.run(PhpReconcilingStrategy.java:221)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:219)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:195)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SUBENTRY 1 org.eclipse.dltk.core 4 4 2015-03-07 13:10:46.508
+!MESSAGE java.lang.IllegalArgumentException
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:166)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.access$0(PhpReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy$2.run(PhpReconcilingStrategy.java:221)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:219)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:195)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+
+!ENTRY org.eclipse.php.ui 4 0 2015-03-07 13:10:46.509
+!MESSAGE Error in php Core during reconcile
+!STACK 1
+org.eclipse.dltk.core.ModelException: java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:180)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.access$0(PhpReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy$2.run(PhpReconcilingStrategy.java:221)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:219)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:195)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+Caused by: java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:166)
+	... 12 more
+!SUBENTRY 1 org.eclipse.dltk.core 4 4 2015-03-07 13:10:46.509
+!MESSAGE java.lang.IllegalArgumentException
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.reconcile(PhpReconcilingStrategy.java:166)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.access$0(PhpReconcilingStrategy.java:138)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy$2.run(PhpReconcilingStrategy.java:221)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:219)
+	at org.eclipse.php.internal.ui.editor.validation.PhpReconcilingStrategy.validate(PhpReconcilingStrategy.java:195)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:303)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:262)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:95)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+
+!ENTRY org.eclipse.php.ui 4 10001 2015-03-07 13:10:46.511
+!MESSAGE PHP ui plugin internal error
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.ASTProvider$1.run(ASTProvider.java:652)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.createAST(ASTProvider.java:641)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:541)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.highlighter.AbstractSemanticHighlighting.getProgram(AbstractSemanticHighlighting.java:129)
+	at org.eclipse.php.internal.ui.editor.highlighter.AbstractSemanticHighlighting.consumes(AbstractSemanticHighlighting.java:100)
+	at org.eclipse.wst.sse.ui.internal.style.SemanticHighlightingReconciler.reconcile(SemanticHighlightingReconciler.java:127)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.endProcessing(DocumentRegionProcessor.java:137)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.php.ui 4 10001 2015-03-07 13:10:46.511
+!MESSAGE PHP ui plugin internal error
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.ASTProvider$1.run(ASTProvider.java:652)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.createAST(ASTProvider.java:641)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:541)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.highlighter.AbstractSemanticHighlighting.getProgram(AbstractSemanticHighlighting.java:129)
+	at org.eclipse.php.internal.ui.editor.highlighter.AbstractSemanticHighlighting.consumes(AbstractSemanticHighlighting.java:100)
+	at org.eclipse.wst.sse.ui.internal.style.SemanticHighlightingReconciler.reconcile(SemanticHighlightingReconciler.java:127)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.endProcessing(DocumentRegionProcessor.java:137)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.php.ui 4 10001 2015-03-07 13:10:46.512
+!MESSAGE PHP ui plugin internal error
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.ASTProvider$1.run(ASTProvider.java:652)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.createAST(ASTProvider.java:641)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:541)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.highlighter.AbstractSemanticHighlighting.getProgram(AbstractSemanticHighlighting.java:129)
+	at org.eclipse.php.internal.ui.editor.highlighter.AbstractSemanticHighlighting.consumes(AbstractSemanticHighlighting.java:100)
+	at org.eclipse.wst.sse.ui.internal.style.SemanticHighlightingReconciler.reconcile(SemanticHighlightingReconciler.java:127)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.endProcessing(DocumentRegionProcessor.java:137)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+
+!ENTRY org.eclipse.php.ui 4 10001 2015-03-07 13:10:46.831
+!MESSAGE PHP ui plugin internal error
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.php.internal.core.ast.nodes.DereferenceNode.<init>(DereferenceNode.java:39)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action5(PhpAstParser.java:11508)
+	at org.eclipse.php.internal.core.ast.scanner.php56.CUP$PhpAstParser$actions.CUP$PhpAstParser$do_action(PhpAstParser.java:3768)
+	at org.eclipse.php.internal.core.ast.scanner.php56.PhpAstParser.do_action(PhpAstParser.java:3658)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:569)
+	at org.eclipse.php.internal.core.ast.nodes.ASTParser.createAST(ASTParser.java:195)
+	at org.eclipse.php.internal.ui.editor.ASTProvider$1.run(ASTProvider.java:652)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.createAST(ASTProvider.java:641)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:541)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:169)
+	at org.eclipse.php.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
