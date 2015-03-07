@@ -1,8 +1,10 @@
 <?php
-require_once 'hotel.php'; //allows you to use the demo.php file.
+// require_once 'hotel.php'; //allows you to use the demo.php file.
+require_once 'privateHotel.php';
 
 //calls the factory create method. This creates the hotel object and stores it in $ht
-$ht=HotelFactory::create(); 
+// $ht=HotelFactory::create();
+$ht=new Hotel();
 
 //takes the hotel object stored in $ht, calles the getHotelArray() method and stores the result in a new variable
 $hoteldata = $ht->getHotelArray();

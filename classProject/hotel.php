@@ -12,8 +12,11 @@
  */
 class Hotel {
 	
-	private $oti_hotel = array ();
-	
+	// private $oti_hotel = array (
+	// "HotelName" => "Juliessa Inn",
+	// "HotelAddress" => "9201 Juliessa Drive",
+	// "HotelWebsite" => "www.juliessaHotel.com"
+	// );
 	public function __construct() {
 		$this->oti_hotel = $oti_hotel = array (
 				"HotelName" => "Juliessa Inn",
@@ -21,13 +24,10 @@ class Hotel {
 				"HotelWebsite" => "www.juliessaHotel.com" 
 		);
 	}
-	
 	public function getHotelArray() {
 		return $this->oti_hotel;
 	}
 }
-
-
 class HotelFactory {
 	public static function create() {
 		return new Hotel ();
